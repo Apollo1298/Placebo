@@ -1,3 +1,8 @@
+## 11.0.0
+* Ported to Minecraft / NeoForge 26.2.
+* Removed the deprecated `TickableTextList#render(... MultiBufferSource ...)` overload (`Font#drawInBatch` / `MultiBufferSource` removed in 26.2). Use the `GuiGraphicsExtractor` overload instead.
+* `DeferredHelper#structureProcessor` now registers and returns the `MapCodec` directly (vanilla structure processor type unrolling).
+
 ## 10.0.2
 * Added a generated-id mode to `RandomAttributeModifier`, available through `RandomAttributeModifier#generated` and the factory codecs `RandomAttributeModifier#generatedCodec` / `#constantGeneratedCodec`.
   * The forced-mandatory-IDs of 10.0.1 didn't really work out that well, so making generated IDs a first-class citizen will resolve the same issue.
